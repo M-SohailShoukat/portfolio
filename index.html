@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Portfolio | Home </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/logo1.png" type="image/png" sizes="114*114">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <!-- link owl carasoul  -->
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <!-- link slick carasoul  -->
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+
+    <link href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script src="app.js"></script>
+</head>
+
+<body onmousemove="color_hover(event)">
+
+    <div class="HeaderSetion">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" onclick="homePage()">
+            <!-- <h2>logo here</h2> -->
+        </div>
+        <div class="menu-list">
+            <img src="Images/list.svg" alt="" onclick="showMenu()">
+        </div>
+        <div class="Nav_links">
+            <p><a href='index.html'>Home</a></p>
+            <p><a href="#AboutSection">About</a></p>
+            <p><a href="#FeatureSection">Feature Work</a></p>
+            <p><a href="service.html">Services</a></p>
+            <p><a href="price.html">Pricing</a></p>
+            <div class="contactForMobile">
+
+                <p><a href="#Contact_Section">CONTACT US</a></p>
+
+            </div>
+
+
+        </div>
+        <div class="contact-btn">
+            <button onclick="contactButton()"> CONTACT US</button>
+        </div>
+
+
+    </div>
+
+    <script>
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-105392568-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <div id="page" class="site">
+        <canvas class="banner_canvas" id="canvas_banner"></canvas>
+    </div>
+
+    <section id="header_container">
+        <div class="Container">
+            <div class="rotateHeading">
+                <p class="para">Your Trust Is First Priority</p>
+            </div>
+            <div class="MiddleHeaderSection">
+
+                <div class="content">
+                    <p>Creativity</p>
+                    <p class="designPara">DESIGN</p>
+                    <p>AGENCY</p>
+                </div>
+                <div class="guyImage">
+                    <img src="Images/img-removebg-preview.png" alt="guy Image">
+                </div>
+                <div class="social_icons">
+                    <div>
+                        <img src="Images/insta.png" alt="Intagram" class="iconList" onclick="showInsta()">
+
+                    </div>
+                    <div>
+                        <img src="Images/twitter.png" alt="Twitter" class="iconList" onclick="showTwitter()">
+
+                    </div>
+                </div>
+            </div>
+            <div class="arrowSection">
+                <img src="Images/arrowBox.png" alt="Arrow" class="arrowImage" onclick="goDown()">
+            </div>
+        </div>
+    </section>
+
+    <section id="AboutSection">
+        <div class="AboutSection">
+            <div class="About_us">
+                <div class="aboutContent" data-aos="fade-right" data-aos-duration="3000">
+                    <h1>ABOUT US</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quia aut, numquam facere itaque beatae nihil maxime enim placeat possimus deserunt,
+                        aliquam fugit tenetur perspiciatis iure necessitatibus iusto distinctio dicta sunt!.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, dignissimos, impedit sequi
+                        eveniet
+                        labore optio corrupti numquam cumque suscipit quia animi.
+                        Iusto esse repellat accusamus deleniti, sequi odit minus tenetur!</p>
+                </div>
+                <div class="aboutImage" data-aos="fade-left" data-aos-duration="3000">
+                    <img src="Images/about-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================Team Heading============================= -->
+
+    <section>
+        <div class="container-fluid p-0 ">
+            <div class="text-loop">
+                <div class="Marquee">
+                    <div class="Marquee-content">
+                        <div class="Marquee-tag">
+                            <span>
+                                UI/UX
+                            </span>
+                        </div>
+                        <div class="Marquee-tag">
+                            <span>
+                                Brands
+                            </span>
+                        </div>
+                        <div class="Marquee-tag">
+                            <span>
+                                Web Design
+                            </span>
+                        </div>
+                        <div class="Marquee-tag">
+                            <span>
+                                App Design
+                            </span>
+                        </div>
+                        <div class="Marquee-tag">
+                            <span>
+                                Wordpress
+                            </span>
+                        </div>
+                        <div class="Marquee-tag">
+                            <span>
+                                Figma Design
+                            </span>
+                        </div>
+                        <div class="Marquee-tag">
+                            <span>
+                                Shopify
+                            </span>
+                        </div>
+                        <div class="Marquee-tag">
+                            <span>
+                                UI/UX
+                            </span>
+                        </div>
+                        <div class="Marquee-tag">
+                            <span>
+                                Brands
+                            </span>
+                        </div>
+                        <div class="Marquee-tag">
+                            <span>
+                                Web Design
+                            </span>
+                        </div>
+                        <div class="Marquee-tag">
+                            <span>
+                                App Design
+                            </span>
+                        </div>
+                        <div class="Marquee-tag">
+                            <span>
+                                Wordpress
+                            </span>
+                        </div>
+                        <div class="Marquee-tag">
+                            <span>
+                                Figma Design
+                            </span>
+                        </div>
+                        <div class="Marquee-tag">
+                            <span>
+                                Shopify
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-3">
+        <div class="container-fluid p-0 ">
+            <div class="text-loop1">
+                <div class="Marquee1">
+                    <div class="Marquee-content1">
+                        <div class="Marquee-tag1">
+                            <span>
+                                UI/UX
+                            </span>
+                        </div>
+                        <div class="Marquee-tag1">
+                            <span>
+                                Brands
+                            </span>
+                        </div>
+                        <div class="Marquee-tag1">
+                            <span>
+                                Web Design
+                            </span>
+                        </div>
+                        <div class="Marquee-tag1">
+                            <span>
+                                App Design
+                            </span>
+                        </div>
+                        <div class="Marquee-tag1">
+                            <span>
+                                Wordpress
+                            </span>
+                        </div>
+                        <div class="Marquee-tag1">
+                            <span>
+                                Figma Design
+                            </span>
+                        </div>
+                        <div class="Marquee-tag1">
+                            <span>
+                                Shopify
+                            </span>
+                        </div>
+                        <div class="Marquee-tag1">
+                            <span>
+                                UI/UX
+                            </span>
+                        </div>
+                        <div class="Marquee-tag1">
+                            <span>
+                                Brands
+                            </span>
+                        </div>
+                        <div class="Marquee-tag1">
+                            <span>
+                                Web Design
+                            </span>
+                        </div>
+                        <div class="Marquee-tag1">
+                            <span>
+                                App Design
+                            </span>
+                        </div>
+                        <div class="Marquee-tag1">
+                            <span>
+                                Wordpress
+                            </span>
+                        </div>
+                        <div class="Marquee-tag1">
+                            <span>
+                                Figma Design
+                            </span>
+                        </div>
+                        <div class="Marquee-tag1">
+                            <span>
+                                Shopify
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ============================== Feature Section =================== -->
+    <section id="FeatureSection">
+        <div class="featureSection">
+            <h1>FEATURE WORK</h1>
+            <div class="cardSection">
+                <div class="card" data-aos="fade-right" data-aos-duration="3000">
+                    <img src="Images/frame-1.png" alt="Frame-01" onclick="logoCard()">
+                </div>
+                <div class="card" data-aos="fade-down" data-aos-duration="3000">
+                    <img src="Images/frame-2.png" alt="Frame-02" onclick="EmotesCard()">
+                </div>
+                <div class="card" data-aos="fade-right" data-aos-duration="3000">
+                    <img src="Images/frame-3.png" alt="Frame-03" onclick="BannerCard()">
+                </div>
+
+            </div>
+            <div class="cardSection">
+                <div class="card" data-aos="fade-right" data-aos-duration="3000">
+                    <img src="Images/frame-4.png" alt="Frame-04" onclick="AnimationCard()">
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="Images/frame-5.png" alt="Frame-05" onclick="VtubeCard()">
+                </div>
+                <div class="card" data-aos="fade-right" data-aos-duration="3000">
+                    <img src="Images/frame-6.png" alt="Frame-06" onclick="OverlaysCard()">
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- ======================= Contact us Section ====================== -->
+    <section id="Contact_Section">
+        <div class="ContactSection">
+            <div class="Contact_content">
+                <div class="allContent" data-aos="zoom-in-up" data-aos-duration="3000">
+                    <h2>CONTACT US NOW</h2>
+                    <div class="inputSection">
+
+                        <input type="email" name="email" id="email" placeholder="    Send us an E-mail">
+                        <button>SEND NOW</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===================== Footer Section ========================= -->
+    <div class="line">
+
+    </div>
+
+    <div>
+        <a id="button" class="my-button show"></a>
+    </div>
+
+    <section id="FooterSection">
+        <div class="footerSection">
+            <div class="footerContent">
+                <div class="firstfooterSection">
+                    <img src="images/logo.png" alt="Logo" onclick="homePage()" class="logo">
+                    <!-- <h2>logo here</h2> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, minima cupiditate! Autem
+                        quaerat fugit
+                        facilis assumenda iusto in, id minima possimus! Laudantium excepturi unde distinctio debitis.
+                        Minus, explicabo nulla autem cum numquam necessitatibus animi aspernatur aut ipsum
+                        exercitationem porro ipsam
+                        repudiandae fugiat at perferendis.</p>
+                </div>
+                <div class="secondFooterSection">
+                    <h3>COMPANY</h3>
+                    <p class="navbarLinks"><a href='index.html'>HOME</a></p>
+                    <p class="navbarLinks"><a href="#AboutSection">ABOUT</a></p>
+                    <p class="navbarLinks"><a href="#FeatureSection">FEATURE WORK</a></p>
+
+                </div>
+                <div class="thirdFooterSection">
+                    <h3>SOCIAL LINKS</h3>
+                    <img src="Images/insta.png" alt="insta" class="iconList" onclick="showInsta()">
+                    <img src="Images/twitter.png" alt="twitter" class="iconList" onclick="showTwitter()">
+                    <img src="Images/facebook.png" alt="twitter" class="iconList" onclick="showTwitter()">
+                </div>
+                <div class="emailFooterSection">
+                    <input type="email" name="email" placeholder="Send us an E-mail" id="">
+                    <div class="sendlogo">
+                        <img src="Images/send.png" alt="EnterEmail" class="sendImage">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/fire.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl-custom.js"></script>
+    <script src="js/title.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        document.getElementsByTagName("body")[0].style.overflowX = "hidden";
+    </script>
+
+    <!-- loader  -->
+    <!-- jQuery Plugin -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+
+        $(window).on('load', function () { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(550).css({ 'overflow': 'visible' });
+        })
+    </script>
+
+    <!-- scroll-top the page  -->
+
+    <script>
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
+
+
+</body>
+
+</html>

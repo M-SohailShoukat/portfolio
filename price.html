@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Portfolio | Pricing </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/logo1.png" type="image/png" sizes="114*114">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <!-- link owl carasoul  -->
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <!-- link slick carasoul  -->
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+
+    <link href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <script src="app.js"></script>
+</head>
+
+<body onmousemove="color_hover(event)">
+
+    <div class="HeaderSetion">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" onclick="homePage()">
+            <!-- <h2>logo here</h2> -->
+        </div>
+        <div class="menu-list">
+            <img src="Images/list.svg" alt="" onclick="showMenu()">
+        </div>
+        <div class="Nav_links">
+            <p><a href='index.html'>Home</a></p>
+            <p><a href="#AboutSection">About</a></p>
+            <p><a href="#FeatureSection">Feature Work</a></p>
+            <p><a href="service.html">Services</a></p>
+            <p><a href="price.html">Pricing</a></p>
+            <div class="contactForMobile">
+
+                <p><a href="#Contact_Section">CONTACT US</a></p>
+
+            </div>
+
+
+        </div>
+        <div class="contact-btn">
+            <button onclick="contactButton()"> CONTACT US</button>
+        </div>
+
+
+    </div>
+
+    <script>
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-105392568-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+    <style>
+        .nav {
+            justify-content: space-between;
+            margin: 30px 0px;
+            position: relative;
+        }
+
+        .nav-link {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .nav-link:hover,
+        .nav-link:focus {
+            color: #fd4545;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #fd4545;
+            background-color: transparent;
+            border: 1px solid #fd4545;
+            border-radius: 10px;
+        }
+
+        .price1 {
+            position: relative;
+        }
+
+        /* body {
+        background-color: #000000;
+    } */
+    </style>
+
+    <div id="page" class="site">
+        <canvas class="banner_canvas" id="canvas_banner"></canvas>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <div class="price1">
+                                <h2>Choose The Plan</h2>
+                                <h4>That Is Right For You!</h4>
+                                <p>If you are ready to expand into the digital world, now you have an option that can
+                                    adjust
+                                    to your budget.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-logo-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-logo" type="button" role="tab" aria-controls="nav-logo"
+                                        aria-selected="true">LOGO DESIGN
+                                    </button>
+                                    <button class="nav-link" id="nav-video-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video"
+                                        aria-selected="false">E-store
+                                    </button>
+                                    <button class="nav-link" id="nav-print-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-print" type="button" role="tab" aria-controls="nav-print"
+                                        aria-selected="false">Website Design
+                                    </button>
+                                    <button class="nav-link" id="nav-branding-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-branding" type="button" role="tab"
+                                        aria-controls="nav-branding" aria-selected="false">Mobile Apps
+                                    </button>
+                                    <button class="nav-link" id="nav-commerce-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-commerce" type="button" role="tab"
+                                        aria-controls="nav-commerce" aria-selected="false">Branding
+                                    </button>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-logo" role="tabpanel"
+                                    aria-labelledby="nav-logo-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                            <div class="price2">
+                                                <h4>Logo Basic <br> Package</h4>
+                                                <h2><sup>$</sup>49</h2>
+                                                <div class="listing">
+                                                    <ul>
+                                                        <li><span>6 Unique Logo Concepts</span></li>
+                                                        <li><span>FREE Icon</span></li>
+                                                        <li><span>Unlimited Revisions</span></li>
+                                                        <li><span>100% Ownership Rights</span></li>
+                                                        <li><span>AI, PSD, EPS, GIF, BMP, JPEG PNG Formats</span></li>
+                                                        <li><span>Free Rush Delivery</span></li>
+                                                        <li><span>Get Initial Concepts within 24 hours</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price3">
+                                                    <p>Speak with us(000) 000-0000</p>
+                                                </div>
+                                                <div class="price4">
+                                                    <a href="#">
+                                                        <p>For Rush Delivery Live Chat Now</p>
+                                                    </a>
+                                                </div>
+                                                <div class="price5">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                            <div class="price2">
+                                                <h4>Logo Plus <br>Package </h4>
+                                                <h2><sup>$</sup>110</h2>
+                                                <div class="listing">
+                                                    <ul>
+                                                        <li><span>12 Unique Logo Concepts</span></li>
+                                                        <li><span>FREE Icon</span></li>
+                                                        <li><span>Unlimited Revisions</span></li>
+                                                        <li><span>100% Ownership Rights</span></li>
+                                                        <li><span>AI, PSD, EPS, GIF, BMP, JPEG PNG Formats</span></li>
+                                                        <li><span>Stationery Design</span></li>
+                                                        <li><span>(Business Card Letterhead, Envelope)</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price3">
+                                                    <p>Speak with us(000) 000-0000</p>
+                                                </div>
+                                                <div class="price4">
+                                                    <a href="#">
+                                                        <p>For Rush Delivery Live Chat Now</p>
+                                                    </a>
+                                                </div>
+                                                <div class="price5">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                            <div class="price2">
+                                                <h4>Logo Infinity <br> Package</h4>
+                                                <h2><sup>$</sup>243</h2>
+                                                <div class="listing">
+                                                    <ul>
+                                                        <li><span>Infinite Logo Concepts</span></li>
+                                                        <li><span>FREE Icon</span></li>
+                                                        <li><span>Unlimited Revisions</span></li>
+                                                        <li><span>100% Ownership Rights</span></li>
+                                                        <li><span>AI, PSD, EPS, GIF, BMP, JPEG PNG Formats</span></li>
+                                                        <li><span>Stationery Design</span></li>
+                                                        <li><span>(Business Card Letterhead, Envelope)</span></li>
+                                                        <li><span>Printing</span></li>
+                                                        <li><span>FREE 500 Business Cards Prints</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price3">
+                                                    <p>Speak with us(000) 000-0000</p>
+                                                </div>
+                                                <div class="price4">
+                                                    <a href="#">
+                                                        <p>For Rush Delivery Live Chat Now</p>
+                                                    </a>
+                                                </div>
+                                                <div class="price5">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-5">
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                            <div class="price2">
+                                                <h4>3D Design <br> Package</h4>
+                                                <h2><sup>$</sup>284</h2>
+                                                <div class="listing">
+                                                    <ul>
+                                                        <li><span>2 Unique 3D Logo Concepts</span></li>
+                                                        <li><span>3D Effect through lights & shades</span></li>
+                                                        <li><span>Unlimited Revisions</span></li>
+                                                        <li><span>100% Ownership Right</span></li>
+                                                        <li><span>AI, PSD, EPS, GIF, BMP, JPEG PNG Formats</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price3">
+                                                    <p>Speak with us(000) 000-0000</p>
+                                                </div>
+                                                <div class="price4">
+                                                    <a href="#">
+                                                        <p>For Rush Delivery Live Chat Now</p>
+                                                    </a>
+                                                </div>
+                                                <div class="price5">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                            <div class="price2">
+                                                <h4>Illustration <br>Package </h4>
+                                                <h2><sup>$</sup>347</h2>
+                                                <div class="listing">
+                                                    <ul>
+                                                        <li><span>4 Unique 3D Logo Concepts </span></li>
+                                                        <li><span>3D Effect through lights & shades </span></li>
+                                                        <li><span>Unlimited Revisions</span></li>
+                                                        <li><span>100% Ownership Rights</span></li>
+                                                        <li><span>AI, PSD, EPS, GIF, BMP, JPEG PNG Formats</span></li>
+                                                        <li><span>Stationery Design</span></li>
+                                                        <li><span>(Business Card Letterhead, Envelope)</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price3">
+                                                    <p>Speak with us(000) 000-0000</p>
+                                                </div>
+                                                <div class="price4">
+                                                    <a href="#">
+                                                        <p>For Rush Delivery Live Chat Now</p>
+                                                    </a>
+                                                </div>
+                                                <div class="price5">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                            <div class="price2">
+                                                <h4>Mascot <br> Package</h4>
+                                                <h2><sup>$</sup>491</h2>
+                                                <div class="listing">
+                                                    <ul>
+                                                        <li><span>1 Unique Mascot Concept</span></li>
+                                                        <li><span>2 - 3 Combinations</span></li>
+                                                        <li><span>100% Custom Illustration</span></li>
+                                                        <li><span>Unlimited Revisions</span></li>
+                                                        <li><span>100% Ownership Right</span></li>
+                                                        <li><span>AI, PSD, EPS, GIF, BMP, JPEG PNG Formats</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price3">
+                                                    <p>Speak with us(000) 000-0000</p>
+                                                </div>
+                                                <div class="price4">
+                                                    <a href="#">
+                                                        <p>For Rush Delivery Live Chat Now</p>
+                                                    </a>
+                                                </div>
+                                                <div class="price5">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-video" role="tabpanel"
+                                    aria-labelledby="nav-video-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                            <div class="price2">
+                                                <h4>Logo Basic <br> Package</h4>
+                                                <h2><sup>$</sup>49</h2>
+                                                <div class="listing">
+                                                    <ul>
+                                                        <li><span>6 Unique Logo Concepts</span></li>
+                                                        <li><span>FREE Icon</span></li>
+                                                        <li><span>Unlimited Revisions</span></li>
+                                                        <li><span>100% Ownership Rights</span></li>
+                                                        <li><span>AI, PSD, EPS, GIF, BMP, JPEG PNG Formats</span></li>
+                                                        <li><span>Free Rush Delivery</span></li>
+                                                        <li><span>Get Initial Concepts within 24 hours</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price3">
+                                                    <p>Speak with us(000) 000-0000</p>
+                                                </div>
+                                                <div class="price4">
+                                                    <a href="#">
+                                                        <p>For Rush Delivery Live Chat Now</p>
+                                                    </a>
+                                                </div>
+                                                <div class="price5">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-print" role="tabpanel"
+                                    aria-labelledby="nav-print-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                            <div class="price2">
+                                                <h4>Logo Basic <br> Package</h4>
+                                                <h2><sup>$</sup>49</h2>
+                                                <div class="listing">
+                                                    <ul>
+                                                        <li><span>6 Unique Logo Concepts</span></li>
+                                                        <li><span>FREE Icon</span></li>
+                                                        <li><span>Unlimited Revisions</span></li>
+                                                        <li><span>100% Ownership Rights</span></li>
+                                                        <li><span>AI, PSD, EPS, GIF, BMP, JPEG PNG Formats</span></li>
+                                                        <li><span>Free Rush Delivery</span></li>
+                                                        <li><span>Get Initial Concepts within 24 hours</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price3">
+                                                    <p>Speak with us(000) 000-0000</p>
+                                                </div>
+                                                <div class="price4">
+                                                    <a href="#">
+                                                        <p>For Rush Delivery Live Chat Now</p>
+                                                    </a>
+                                                </div>
+                                                <div class="price5">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-branding" role="tabpanel"
+                                    aria-labelledby="nav-branding-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                            <div class="price2">
+                                                <h4>Logo Basic <br> Package</h4>
+                                                <h2><sup>$</sup>49</h2>
+                                                <div class="listing">
+                                                    <ul>
+                                                        <li><span>6 Unique Logo Concepts</span></li>
+                                                        <li><span>FREE Icon</span></li>
+                                                        <li><span>Unlimited Revisions</span></li>
+                                                        <li><span>100% Ownership Rights</span></li>
+                                                        <li><span>AI, PSD, EPS, GIF, BMP, JPEG PNG Formats</span></li>
+                                                        <li><span>Free Rush Delivery</span></li>
+                                                        <li><span>Get Initial Concepts within 24 hours</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price3">
+                                                    <p>Speak with us(000) 000-0000</p>
+                                                </div>
+                                                <div class="price4">
+                                                    <a href="#">
+                                                        <p>For Rush Delivery Live Chat Now</p>
+                                                    </a>
+                                                </div>
+                                                <div class="price5">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-commerce" role="tabpanel"
+                                    aria-labelledby="nav-commerce-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                            <div class="price2">
+                                                <h4>Logo Basic <br> Package</h4>
+                                                <h2><sup>$</sup>49</h2>
+                                                <div class="listing">
+                                                    <ul>
+                                                        <li><span>6 Unique Logo Concepts</span></li>
+                                                        <li><span>FREE Icon</span></li>
+                                                        <li><span>Unlimited Revisions</span></li>
+                                                        <li><span>100% Ownership Rights</span></li>
+                                                        <li><span>AI, PSD, EPS, GIF, BMP, JPEG PNG Formats</span></li>
+                                                        <li><span>Free Rush Delivery</span></li>
+                                                        <li><span>Get Initial Concepts within 24 hours</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price3">
+                                                    <p>Speak with us(000) 000-0000</p>
+                                                </div>
+                                                <div class="price4">
+                                                    <a href="#">
+                                                        <p>For Rush Delivery Live Chat Now</p>
+                                                    </a>
+                                                </div>
+                                                <div class="price5">
+                                                    <a href="#">Order Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div>
+        <a id="button" class="my-button show"></a>
+    </div>
+
+
+    <section id="FooterSection">
+        <div class="footerSection">
+            <div class="footerContent">
+                <div class="firstfooterSection">
+                    <img src="images/logo.png" alt="Logo" onclick="homePage()" class="logo">
+                    <!-- <h2>logo here</h2> -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, minima cupiditate! Autem
+                        quaerat fugit
+                        facilis assumenda iusto in, id minima possimus! Laudantium excepturi unde distinctio debitis.
+                        Minus, explicabo nulla autem cum numquam necessitatibus animi aspernatur aut ipsum
+                        exercitationem porro ipsam
+                        repudiandae fugiat at perferendis.</p>
+                </div>
+                <div class="secondFooterSection">
+                    <h3>COMPANY</h3>
+                    <p class="navbarLinks"><a href='index.html'>HOME</a></p>
+                    <p class="navbarLinks"><a href="#AboutSection">ABOUT</a></p>
+                    <p class="navbarLinks"><a href="#FeatureSection">FEATURE WORK</a></p>
+
+                </div>
+                <div class="thirdFooterSection">
+                    <h3>SOCIAL LINKS</h3>
+                    <img src="Images/insta.png" alt="insta" class="iconList" onclick="showInsta()">
+                    <img src="Images/twitter.png" alt="twitter" class="iconList" onclick="showTwitter()">
+                    <img src="Images/facebook.png" alt="twitter" class="iconList" onclick="showTwitter()">
+                </div>
+                <div class="emailFooterSection">
+                    <input type="email" name="email" placeholder="Send us an E-mail" id="">
+                    <div class="sendlogo">
+                        <img src="Images/send.png" alt="EnterEmail" class="sendImage">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/fire.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl-custom.js"></script>
+    <script src="js/title.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        document.getElementsByTagName("body")[0].style.overflowX = "hidden";
+    </script>
+
+    <!-- loader  -->
+    <!-- jQuery Plugin -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+
+        $(window).on('load', function () { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(550).css({ 'overflow': 'visible' });
+        })
+    </script>
+
+    <!-- scroll-top the page  -->
+
+    <script>
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
+
+
+</body>
+
+</html>
